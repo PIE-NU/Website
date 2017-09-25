@@ -1,0 +1,13 @@
+{
+  "name": "pie-web-app",
+  "version": "1.0.0",
+  "description": "Web app for Pioneers of Interactive Entertainment (PIE)",
+  "author": "Pie Northwestern",
+  "main": "server.js",
+  "scripts": {
+    "start": "node app/server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
