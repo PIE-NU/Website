@@ -15,8 +15,10 @@ body {
 	background-size: cover;
 	background-position: left bottom;
 	background-repeat: repeat-x;
+	max-height: 1024px;
 }
 
 #pie-dungeon {
-	background-color: grey;
+	background-image: url(../img/brick.png);
+	background-repeat: repeat;
 }
