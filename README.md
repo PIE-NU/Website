@@ -33,3 +33,8 @@ You should remove old builds frequently to avoid wasting space.
 ## Dependencies
 
 - [Docker](https://www.docker.com/)
+
+## Special Thanks
+
+- [Sunny Land](https://ansimuz.itch.io/sunny-land-pixel-game-art) for title tileset
+- [NMgnCP](http://www.nmgcp.com/) for title background
