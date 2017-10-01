@@ -1,0 +1,23 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.page-container {
+	height: 100vh;
+	width: 100vw;
+	min-height: 375px;
+	min-width: 500px;
+}
+
+#pie-sky {
+	background-color: blue;
+}
+
+#pie-caverns {
+	background-color: brown;
+}
+
+#pie-dungeon {
+	background-color: grey;
+}
