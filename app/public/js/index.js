@@ -1,8 +1,24 @@
+/* Constants */
+
+const navbarId = 'pie-nav';
+const navStickyClassName = 'sticky';
+const titleId = 'pie-title';
+const bodyId = 'pie-body';
+const textFlashId = 'text-flashing';
+
+/* Globals */
+
 var scroll = new SmoothScroll('a[href*="#"]')
 var hasEntered = false;
+var hasLoaded = false;
+var pieNavbar;
+var pieTitle;
+var pieBody;
+
+/* Helper Functions */
 
 var flashText = function () {
-	var flashingTexts = document.getElementsByClassName('text-flashing');
+	var flashingTexts = document.getElementsByClassName(textFlashId);
 	setInterval(function() {
 		for (var i = 0; i < flashingTexts.length; i++) {
 			flashingTexts[i].style.display = (flashingTexts[i].style.display == 'none' ? '' : 'none');
@@ -10,28 +26,48 @@ var flashText = function () {
 	}, 500);
 }
 
-var scrollToTarget = function(id) {
+var scrollToTarget = function (id) {
 	document.querySelector(id).scrollIntoView({
 		behavior: smooth,
 	});
 }
 
 var stickNavbar = function () {
-	var navbar = document.getElementById('pie-nav');
-
-	if (window.scrollY >= document.getElementById('pie-sky').offsetHeight)
-		navbar.classList.add('sticky');
-	else
-		navbar.classList.remove('sticky');
+	if (window.scrollY >= pieTitle.offsetHeight) {
+		pieNavbar.classList.add(navStickyClassName);
+	}
+	else {
+		pieNavbar.classList.remove(navStickyClassName);
+	}
+	setBodyMargin();
 }
 
+var setBodyMargin = function () {
+	pieBody.style.marginTop = pieNavbar.classList.contains(navStickyClassName) ?
+		pieNavbar.clientHeight.toString() + 'px' : '0px';
+}
+
+/* Event Handling */
+
 window.addEventListener('load', function() {
+	pieTitle = document.getElementById(titleId);
+	pieNavbar = document.getElementById(navbarId);
+	pieBody = document.getElementById(bodyId);
 	flashText();
+	hasLoaded = true;
 }, false);
 
 window.addEventListener('scroll', function() {
+	if (!hasLoaded) return;
 	stickNavbar();
 });
+
+window.addEventListener('resize', function() {
+	if (!hasLoaded) return;
+	setBodyMargin();
+})
+
+/* Key Handling */
 
 document.onkeydown = function(ev)
 {
@@ -40,7 +76,7 @@ document.onkeydown = function(ev)
 		// a
 		case 65:
 			if (hasEntered) return;
-			scroll.animateScroll(document.querySelector('#pie-dungeon'));
+			scroll.animateScroll(pieBody);
 			hasEntered = true;
 			break;
 	}
