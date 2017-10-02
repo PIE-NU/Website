@@ -5,23 +5,30 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Pioneers of Interactive Entertainment</title>
 		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 		<meta name="application-name" content="PIE">
 
+		<!-- Stylesheets -->
 		<link href="css/index.css" rel="stylesheet">
 
 		<!-- Google Analytics -->
 		<script>
 		</script>
 	</head>
-	<body id="skrollr-body">
-		<div id="pie-sky" class="page-container">
-		</div>
-		<div id="pie-dungeon" class="page-container">
+	<body>
+		<div id="content">
+			<div id="pie-sky">
+				<div id="pie-logo-container">
+					<img id="pie-logo" src="img/logo_md.png" class="img-responsive">
+					<h1 id="enter-hint" class="text-center text-flashing">Press <i>A</i> to enter.</h1>
+				</div>
+			</div>
+			<nav id="pie-nav"></nav>
+			<div id="pie-dungeon" class="page-container">
+			</div>
 		</div>
 
-		<!-- JavaScript -->
-		<script src="js/skrollr.min.js" type="text/javascript"></script>
-		<script src="js/index.js" type="text/javascript"></script>
+		<!-- Javascript -->
+		<script src="js/index.js"></script>
 	</body>
 </html>

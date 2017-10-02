@@ -1,13 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
 body {
 	padding: 0;
 	margin: 0;
-}
-
-.page-container {
-	height: 100vh;
-	width: 100vw;
-	min-height: 375px;
-	min-width: 500px;
+	font-family: VT323, Arial;
 }
 
 #pie-sky {
@@ -15,10 +11,45 @@ body {
 	background-size: cover;
 	background-position: left bottom;
 	background-repeat: repeat-x;
-	max-height: 1024px;
+	height: 89.0625vh;
+	max-height: 912px;
+	min-height: 525px;
+	min-width: 700px;
+
+}
+
+#pie-logo-container {
+	width: 100%;
+	height: 100%;
+}
+
+#pie-logo {
+	display: block;
+	margin: auto;
+}
+
+#pie-nav {
+	background-image: url(../img/ground.png);
+	background-size: auto 100%;
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	min-height: 60px;
+	height: 10.9375vh;
+	max-height: 112px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 #pie-dungeon {
 	background-image: url(../img/brick.png);
 	background-repeat: repeat;
+	height: 300vh; /* temporary */
+}
+
+.text-center {
+	text-align: center;
 }
