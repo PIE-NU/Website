@@ -1,4 +1,8 @@
+/* Font Imports */
+
 @import url('https://fonts.googleapis.com/css?family=VT323');
+
+/* Page Styling */
 
 body {
 	padding: 0;
@@ -15,7 +19,6 @@ body {
 	max-height: 912px;
 	min-height: 525px;
 	min-width: 700px;
-
 }
 
 #pie-logo-container {
@@ -38,6 +41,36 @@ body {
 	max-height: 112px;
 }
 
+#pie-nav ul {
+	height: 100%;
+	margin: auto;
+	padding: 0;
+	display: table;
+	text-align: center;
+}
+
+
+#pie-nav ul li {
+	opacity: 0;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0px 40px 0px 40px;
+	font-size: 2em;
+	color: white;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.sticky ul li {
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+	opacity: 1 !important;
+}
+
 .sticky {
 	position: fixed;
 	top: 0;
@@ -53,3 +86,7 @@ body {
 .text-center {
 	text-align: center;
 }
+
+
+/* Animations */
+

@@ -55,7 +55,7 @@ window.addEventListener('load', function() {
 	pieBody = document.getElementById(bodyId);
 	flashText();
 	hasLoaded = true;
-}, false);
+});
 
 window.addEventListener('scroll', function() {
 	if (!hasLoaded) return;
