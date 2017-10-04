@@ -8,7 +8,9 @@ const textFlashId = 'text-flashing';
 
 /* Globals */
 
-var scroll = new SmoothScroll('a[href*="#"]')
+var scroll = new SmoothScroll('a[href*="#"]', {
+	// Options
+});
 var hasEntered = false;
 var hasLoaded = false;
 var pieNavbar;
@@ -26,12 +28,6 @@ var flashText = function () {
 	}, 500);
 }
 
-var scrollToTarget = function (id) {
-	document.querySelector(id).scrollIntoView({
-		behavior: smooth,
-	});
-}
-
 var stickNavbar = function () {
 	if (window.scrollY >= pieTitle.offsetHeight) {
 		pieNavbar.classList.add(navStickyClassName);
@@ -43,8 +39,14 @@ var stickNavbar = function () {
 }
 
 var setBodyMargin = function () {
-	pieBody.style.marginTop = pieNavbar.classList.contains(navStickyClassName) ?
+	pieBody.style.paddingTop = pieNavbar.classList.contains(navStickyClassName) ?
 		pieNavbar.clientHeight.toString() + 'px' : '0px';
+	document.scrollTop -= pieNavbar.clientHeight;
+}
+
+// TODO: Cause scrolling to underline an anchor
+var selectAnchor = function (anchor, toggle) {
+	var anchor = document.getElementById(anchor);
 }
 
 /* Event Handling */
@@ -76,7 +78,7 @@ document.onkeydown = function(ev)
 		// a
 		case 65:
 			if (hasEntered) return;
-			scroll.animateScroll(pieBody);
+			scroll.animateScroll(pieNavbar);
 			hasEntered = true;
 			break;
 	}

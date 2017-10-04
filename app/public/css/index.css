@@ -27,8 +27,15 @@ body {
 }
 
 #pie-logo {
+	position: relative;
 	display: block;
 	margin: auto;
+	top: -60px;
+}
+
+#enter-hint {
+	margin-top: -90px;
+	font-size: 2.5em;
 }
 
 #pie-nav {
@@ -54,8 +61,9 @@ body {
 	opacity: 0;
 	display: table-cell;
 	vertical-align: middle;
+	text-shadow: 3px 3px #000000;
 	padding: 0px 40px 0px 40px;
-	font-size: 2em;
+	font-size: 2.2em;
 	color: white;
 	-webkit-transition: opacity 1s;
 	-moz-transition: opacity 1s;
@@ -80,11 +88,40 @@ body {
 #pie-body {
 	background-image: url(../img/brick.png);
 	background-repeat: repeat;
-	height: 300vh; /* temporary */
+	background-position: left bottom;
+	color: white;
+	text-align: center;
+	min-height: 100vh;
+}
+
+#pie-body h1, h2, h3, h4, h5 h6 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#pie-body h2 {
+	font-size: 3em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#pie-body h3 {
+	font-size: 2.2em;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+#pie-body p {
+	font-size: 1.8em;
 }
 
 .text-center {
 	text-align: center;
+}
+
+.body-section {
+	width: 75%;
+	margin: auto;
 }
 
 
