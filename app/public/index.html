@@ -11,8 +11,14 @@
 		<!-- Stylesheets -->
 		<link href="css/index.css" rel="stylesheet">
 
-		<!-- Google Analytics -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108940056-1"></script>
 		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-108940056-1');
 		</script>
 	</head>
 	<body>
@@ -20,7 +26,7 @@
 			<div id="pie-title">
 				<div id="pie-logo-container">
 					<img id="pie-logo" src="img/logo_lg.png">
-					<h1 id="enter-hint" class="text-center text-flashing">Press <i>A</i> to enter.</h1>
+					<h1 id="enter-hint" class="text-center text-flashing">Press <i>A</i> to start.</h1>
 				</div>
 			</div>
 			<nav id="pie-nav">
