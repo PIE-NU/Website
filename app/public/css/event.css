@@ -1,0 +1,17 @@
+.event-image {
+  float: left;
+  display: inline;
+  width: 10%;
+  min-height: 50px;
+}
+
+.event-content {
+  float: left;
+  display: inline;
+  width: 80%;
+}
+
+.event-break {
+  clear: both;
+  margin-top: 10px;
+}
