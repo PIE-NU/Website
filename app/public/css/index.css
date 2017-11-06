@@ -124,6 +124,20 @@ body {
 	margin: auto;
 }
 
+.sub-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.sub-list li {
+	color: white;
+	font-size: 1.5em;
+	padding-bottom: 20px;
+}
+
+.sub-list li:last-child {
+	padding-bottom: 0px;
+}
 
 /* Animations */
 
