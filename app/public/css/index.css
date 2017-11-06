@@ -1,4 +1,4 @@
-/* Font Imports */
+/* CSS and Font Imports */
 
 @import url('https://fonts.googleapis.com/css?family=VT323');
 
@@ -127,3 +127,11 @@ body {
 
 /* Animations */
 
+
+
+/* Buttons */
+
+.scroll:hover {
+  color: lightgrey;
+  cursor: pointer;
+}

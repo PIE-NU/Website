@@ -69,6 +69,13 @@ window.addEventListener('resize', function() {
 	setBodyMargin();
 })
 
+/* Header Scrolling */
+
+$(".scroll").on('click', function() {
+		var scrollToId = $(this).attr("id").split("-")[1];
+    $('html,body').animate({ scrollTop: $("#" + scrollToId).offset().top },'slow');
+});
+
 /* Key Handling */
 
 document.onkeydown = function(ev)
