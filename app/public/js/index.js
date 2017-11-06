@@ -72,8 +72,9 @@ window.addEventListener('resize', function() {
 /* Header Scrolling */
 
 $(".scroll").on('click', function() {
-		var scrollToId = $(this).attr("id").split("-")[1];
-    $('html,body').animate({ scrollTop: $("#" + scrollToId).offset().top },'slow');
+	var pieNavHeight = $("#pie-nav").height();
+	var scrollToId = $(this).attr("id").split("-")[1];
+  $('html,body').animate({ scrollTop: $("#" + scrollToId).offset().top - pieNavHeight},'slow');
 });
 
 /* Key Handling */
