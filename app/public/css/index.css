@@ -10,6 +10,22 @@ body {
 	font-family: VT323, Arial;
 }
 
+.body-section {
+	min-width: 700px;
+	width: 75%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+p {
+	padding: 14.4px 0px;
+	margin: 0;
+}
+
+hr {
+	color: white;
+}
+
 #pie-title {
 	background-image: url(../img/sky.png);
 	background-size: cover;
@@ -95,8 +111,8 @@ body {
 }
 
 #pie-body h1, h2, h3, h4, h5 h6 {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 #pie-body h2 {
@@ -119,11 +135,6 @@ body {
 	text-align: center;
 }
 
-.body-section {
-	width: 75%;
-	margin: auto;
-}
-
 .sub-list {
 	list-style-type: none;
 	padding: 0;
@@ -139,6 +150,11 @@ body {
 	padding-bottom: 0px;
 }
 
+.desc-content {
+	padding-left: 10%;
+	width: 80%;
+}
+
 /* Animations */
 
 
@@ -148,4 +164,22 @@ body {
 .scroll:hover {
   color: lightgrey;
   cursor: pointer;
+}
+
+.btn-googleform {
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	font-size: 1.5em;
+	padding: .125em .25em;
+}
+
+.btn-googleform:hover {
+	color: black;
+	background-color: white;
+}
+
+a {
+	color: white;
+	text-decoration: none;
 }

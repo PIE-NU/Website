@@ -6,12 +6,15 @@
 }
 
 .event-content {
-  float: left;
-  display: inline;
+  padding-left: 10%;
   width: 80%;
 }
 
 .event-break {
   clear: both;
   margin-top: 10px;
+}
+
+.ev-title {
+  font-size: 2.1em !important; 
 }
