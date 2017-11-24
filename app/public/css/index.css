@@ -77,7 +77,6 @@ hr {
 	opacity: 0;
 	display: table-cell;
 	vertical-align: middle;
-	text-shadow: 3px 3px #000000;
 	padding: 0px 40px 0px 40px;
 	font-size: 2.2em;
 	color: white;
@@ -161,11 +160,6 @@ hr {
 
 /* Buttons */
 
-.scroll:hover {
-  color: lightgrey;
-  cursor: pointer;
-}
-
 .btn-googleform {
 	text-decoration: none;
 	color: white;
@@ -182,4 +176,14 @@ hr {
 a {
 	color: white;
 	text-decoration: none;
+	text-shadow: 3px 3px #000000;
+}
+
+a:hover {
+	color:#cccccc;
+	cursor: pointer;
+}
+
+a:active {
+	text-shadow: none;
 }
