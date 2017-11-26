@@ -24,7 +24,7 @@ var flashText = function () {
 	var flashingTexts = document.getElementsByClassName(textFlashId);
 	setInterval(function() {
 		for (var i = 0; i < flashingTexts.length; i++) {
-			flashingTexts[i].style.display = (flashingTexts[i].style.display == 'none' ? '' : 'none');
+			flashingTexts[i].style.display = (flashingTexts[i].style.display == 'none' && !hasEntered ? '' : 'none');
 		}
 	}, 500);
 }
