@@ -170,10 +170,21 @@ hr {
 
 .btn-googleform {
 	text-decoration: none;
-	color: white;
-	background-color: black;
 	font-size: 1.5em;
 	padding: .125em .25em;
+
+	border: none;
+
+	display: block;
+	margin: auto;
+	width: 128px;
+	height: 64px;
+	background: url("../img/apply_unpressed.png");
+	background-size: auto;
+}
+
+.btn-googleform:hover {
+	background: url("../img/apply_hover.png");
 }
 
 .btn-googleform:hover {
