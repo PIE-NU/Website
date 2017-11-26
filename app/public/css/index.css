@@ -169,22 +169,36 @@ hr {
 /* Buttons */
 
 .btn-googleform {
-	text-decoration: none;
 	font-size: 1.5em;
 	padding: .125em .25em;
 
 	border: none;
+	box-shadow: none;
 
 	display: block;
 	margin: auto;
 	width: 128px;
 	height: 64px;
-	background: url("../img/apply_unpressed.png");
-	background-size: auto;
 }
 
-.btn-googleform:hover {
+.btn-apply,
+.btn-apply:hover {
+	background-size: cover !important;
+	background-color: transparent !important;
+	text-decoration: none;
+}
+
+.btn-apply {
+	background: url("../img/apply_unpressed.png");
+}
+
+.btn-apply:hover {
 	background: url("../img/apply_hover.png");
+}
+
+.btn-apply:active {
+	background: url("../img/apply_pressed.png");
+
 }
 
 .btn-googleform:hover {
