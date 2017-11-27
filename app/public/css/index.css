@@ -63,6 +63,7 @@ hr {
 	min-height: 60px;
 	height: 10.9375vh;
 	max-height: 112px;
+	min-width: 700px;
 }
 
 #pie-nav ul {
@@ -72,7 +73,6 @@ hr {
 	display: table;
 	text-align: center;
 }
-
 
 #pie-nav ul li {
 	/* display:none;
@@ -100,6 +100,7 @@ hr {
 .sticky {
 	position: fixed;
 	top: 0;
+	float: center;
 	width: 100%;
 }
 
@@ -110,6 +111,7 @@ hr {
 	color: white;
 	text-align: center;
 	min-height: 100vh;
+	min-width: 700px;
 }
 
 #pie-body h1, h2, h3, h4, h5 h6 {
@@ -167,6 +169,10 @@ hr {
 
 
 /* Buttons */
+
+.btn-apply, .btn-googleform {
+	margin-bottom: 25px !important;
+}
 
 .btn-googleform {
 	font-size: 1.5em;

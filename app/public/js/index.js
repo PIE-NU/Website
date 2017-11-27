@@ -118,6 +118,17 @@ $(".scroll").on('click', function() {
   $('html,body').animate({ scrollTop: $("#" + scrollToId).offset().top - pieNavHeight},'slow');
 });
 
+$(window).scroll(function (event) {
+	var scroll = $(window).scrollLeft();
+	var nav = $('#pie-nav');
+	if (nav.hasClass('sticky')) {
+		nav.css('margin-left',-scroll);
+	}
+	else {
+		nav.css('margin-left', 0);
+	}
+});
+
 /* Key Handling */
 
 var onKeyDown = function(ev)
