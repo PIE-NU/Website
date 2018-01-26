@@ -8,7 +8,7 @@
 
 2. Run the image in a container as a daemon:
 
-> docker run -p 49160:8080 -d \<username\>/pie-web-app
+> docker run -p 49160:8080 -d --restart=always \<username\>/pie-web-app
 
 ## How to Remove Old Builds
 
